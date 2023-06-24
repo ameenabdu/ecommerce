@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+
+    {% block header %}
+    <!-- Add styles to individual pages -->
+    {% endblock %}
+    
+</head>
+
+<body>
+    <h1>header</h1>
+    <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li>Gallery</li>
+    </ul>
+
+    <br><br>
+
+    {% block content %}
+
+    <!-- Add individual page content -->
+    <!-- <h1>content</h1> -->
+
+    {% endblock %}
+
+    <br><br>
+
+    <h3 style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quisquam modi fugit,
+        aspernatur provident
+        quaerat nobis deserunt et optio magni!</h3>
+    <h3>Footer</h3>
+    <h4> &copy Copyright</h4>
+</body>
+
+</html>

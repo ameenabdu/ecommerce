@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER HOME</title>
+</head>
+<body>
+   <a href="{% url 'customer:c-home' %}"><h1>Customer Home</h1></a> 
+   <a href="{% url 'customer:my-cart' %}"> <h1>My Cart</h1></a> 
+   <a href="{% url 'customer:my-orders' %}"><h1>My Orders</h1></a> 
+   <a href="{% url 'customer:wishlist' %}"><h1>Wishlist</h1></a> 
+   
+    <img src="{% static 'images/facebook.png' %}" alt="">
+</body>
+</html>
